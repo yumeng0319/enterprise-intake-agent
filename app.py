@@ -49,8 +49,8 @@ with st.sidebar:
         "5. **Respond** (LLM) — draft reply, or a clarification ask if confidence is low"
     )
 
-demo_tab, design_tab, ai_usage_tab = st.tabs(
-    ["Live Demo", "Design Doc", "AI Usage Notes"]
+demo_tab, design_tab, reliability_tab, ai_usage_tab = st.tabs(
+    ["Live Demo", "Design Doc", "Reliability Findings", "AI Usage Notes"]
 )
 
 with demo_tab:
@@ -108,6 +108,9 @@ with demo_tab:
 
 with design_tab:
     render_markdown_file("design_doc.md")
+
+with reliability_tab:
+    render_markdown_file("reliability_findings.md")
 
 with ai_usage_tab:
     render_markdown_file("ai_usage_notes.md")

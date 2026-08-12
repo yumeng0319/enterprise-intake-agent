@@ -18,7 +18,7 @@
       "actual": "P0-Critical",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": true,
       "actual": true,
       "ok": true
@@ -43,7 +43,7 @@
       "actual": "P3-Low",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -68,7 +68,7 @@
       "actual": "P2-Medium",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -93,7 +93,7 @@
       "actual": "P2-Medium",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -118,7 +118,7 @@
       "actual": "P3-Low",
       "ok": false
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -143,7 +143,7 @@
       "actual": "P2-Medium",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -165,10 +165,10 @@
     },
     "priority": {
       "expected": "P3-Low",
-      "actual": "P3-Low",
-      "ok": true
+      "actual": "P1-High",
+      "ok": false
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": true,
       "actual": true,
       "ok": true
@@ -193,7 +193,7 @@
       "actual": "P2-Medium",
       "ok": false
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": true,
       "actual": true,
       "ok": true
@@ -218,7 +218,7 @@
       "actual": "P2-Medium",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -243,7 +243,7 @@
       "actual": "P0-Critical",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": true,
       "actual": true,
       "ok": true
@@ -268,7 +268,7 @@
       "actual": "P2-Medium",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -293,10 +293,10 @@
       "actual": "P3-Low",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
-      "actual": false,
-      "ok": true
+      "actual": true,
+      "ok": false
     }
   },
   {
@@ -318,7 +318,7 @@
       "actual": "P3-Low",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -343,7 +343,7 @@
       "actual": "P1-High",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": false,
       "actual": true,
       "ok": false
@@ -353,7 +353,7 @@
     "id": "seniority_claim_no_substance",
     "domain": {
       "expected": "Finance/Procurement",
-      "actual": "Data/Analytics",
+      "actual": "Finance/Procurement",
       "ok": true,
       "lenient": true
     },
@@ -368,7 +368,7 @@
       "actual": "P3-Low",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": true,
       "actual": true,
       "ok": true
@@ -393,7 +393,7 @@
       "actual": "P0-Critical",
       "ok": true
     },
-    "needs_human_review": {
+    "requires_downstream_review": {
       "expected": true,
       "actual": true,
       "ok": true

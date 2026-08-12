@@ -56,14 +56,16 @@ running hand-specified facts through the real rule engine.
 |---|---:|
 | Domain | 16/16 |
 | Work type | 16/16 |
-| Priority | 14/16 |
-| Unsafe under-escalation | 0/9 |
+| Priority | 13/16 |
+| Unsafe under-escalation | 0/10 |
 
 The interesting result wasn't the headline accuracy — it was the *direction* of the
-errors. Raw `requires_downstream_review` agreement was 7/16, but of the 9 disagreements,
-9/9 were the system flagging *more* cautiously than the naive label expected, and 0/9
-were the dangerous direction (missing a flag it should have raised). The two priority
-misses traced back to imprecise eval labels on manual review, not model error.
+errors. Raw `requires_downstream_review` agreement was 6/16, but of the 10
+disagreements, 10/10 were the system flagging *more* cautiously than the naive label
+expected, and 0/10 were the dangerous direction (missing a flag it should have raised).
+All three priority misses traced back to imprecise eval labels or genuinely ambiguous
+judgment calls on manual review, not systematic model error — full breakdown in the
+Reliability Findings tab.
 
 Separately, removing the fixed routing table and asking the model to freely name a team
 produced inconsistent, invented team names in 4 of 5 test requests (e.g. "Physical

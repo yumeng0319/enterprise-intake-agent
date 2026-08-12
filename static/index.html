@@ -138,6 +138,7 @@
   .main {
     padding: 40px 48px;
     max-width: 880px;
+    min-width: 0;
   }
 
   h1 {
@@ -487,6 +488,7 @@
       <div class="page-tabs">
         <button class="page-tab-btn active" data-page-tab="demo">Live Demo</button>
         <button class="page-tab-btn" data-page-tab="design">Design Doc</button>
+        <button class="page-tab-btn" data-page-tab="reliability">Reliability Findings</button>
         <button class="page-tab-btn" data-page-tab="ai-usage">AI Usage Notes</button>
       </div>
 
@@ -543,6 +545,10 @@
 
       <div class="page-panel" id="page-design">
         <div class="markdown-body" id="design-doc-content"><p class="doc-loading">Loading…</p></div>
+      </div>
+
+      <div class="page-panel" id="page-reliability">
+        <div class="markdown-body" id="reliability-content"><p class="doc-loading">Loading…</p></div>
       </div>
 
       <div class="page-panel" id="page-ai-usage">
@@ -680,6 +686,7 @@ function renderResult(data) {
 const docCache = {};
 const docConfig = {
   design: { endpoint: '/api/docs/design', containerId: 'design-doc-content' },
+  reliability: { endpoint: '/api/docs/reliability', containerId: 'reliability-content' },
   'ai-usage': { endpoint: '/api/docs/ai-usage', containerId: 'ai-usage-content' },
 };
 
@@ -705,7 +712,7 @@ document.querySelectorAll('.page-tab-btn').forEach(btn => {
     document.querySelectorAll('.page-panel').forEach(p => p.classList.remove('active'));
     btn.classList.add('active');
     document.getElementById('page-' + target).classList.add('active');
-    if (target === 'design' || target === 'ai-usage') {
+    if (target in docConfig) {
       loadDoc(target);
     }
   });

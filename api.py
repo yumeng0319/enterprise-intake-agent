@@ -24,6 +24,7 @@ PROJECT_DIR = Path(__file__).parent
 
 DOCS = {
     "design": "design_doc.md",
+    "reliability": "reliability_findings.md",
     "ai-usage": "ai_usage_notes.md",
 }
 
