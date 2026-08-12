@@ -81,7 +81,9 @@ with demo_tab:
         col4.metric("Routed to", r.get("recommended_team", "-"))
 
         if r.get("requires_downstream_review"):
-            st.warning(f"**Flagged for downstream review:** {r.get('escalation_reason', '')}")
+            urgency = r.get("review_urgency", "standard")
+            urgency_tag = "🔺 EXPEDITED" if urgency == "expedited" else "standard queue"
+            st.warning(f"**Flagged for downstream review** [{urgency_tag}]: {r.get('escalation_reason', '')}")
         else:
             st.success("Completed autonomously — no downstream review flagged.")
 

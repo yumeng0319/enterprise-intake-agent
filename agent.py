@@ -368,6 +368,18 @@ def step3_route(extraction: dict, classification: dict, priority: dict) -> dict:
         result["escalation_reason"] = " ".join([existing] + forced_reasons).strip()
 
     result["needs_clarification"] = completeness_score < CLARIFICATION_THRESHOLD
+
+    # review_urgency is deliberately separate from priority: priority reflects business
+    # impact only and never moves for an unverified seniority claim (see rule_engine.py).
+    # But once a human is already going to review this, how fast they look at it is a
+    # much lower-stakes lever -- nothing gets resourced or promised until a person
+    # verifies the claim anyway. So a claimed-executive requester can move it to the
+    # front of the review queue without ever touching the priority number itself.
+    result["review_urgency"] = (
+        "expedited"
+        if result["requires_downstream_review"] and claimed_seniority == "executive_or_leadership"
+        else "standard"
+    )
     return result
 
 
@@ -434,7 +446,7 @@ class IntakeResult:
         c, p, r = self.classification, self.priority, self.routing
         review_line = f"Downstream review required? : {r.get('requires_downstream_review')}"
         if r.get("requires_downstream_review"):
-            review_line += f" ({r.get('escalation_reason')})"
+            review_line += f" [{r.get('review_urgency')}] ({r.get('escalation_reason')})"
         lines = [
             f"Classification : {c.get('domain')} / {c.get('work_type')}",
             f"Priority       : {p.get('priority')}  [{p.get('rule_triggered')}]",

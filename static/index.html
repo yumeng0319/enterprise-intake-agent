@@ -655,8 +655,9 @@ function renderResult(data) {
 
   const banner = document.getElementById('review-banner');
   if (r.requires_downstream_review) {
+    const urgencyTag = r.review_urgency === 'expedited' ? ' 🔺 EXPEDITED' : ' (standard queue)';
     banner.className = 'review-banner warn';
-    banner.innerHTML = `<b>Flagged for downstream review:</b> ${escapeHtml(r.escalation_reason || '')}`;
+    banner.innerHTML = `<b>Flagged for downstream review${urgencyTag}:</b> ${escapeHtml(r.escalation_reason || '')}`;
   } else {
     banner.className = 'review-banner ok';
     banner.innerHTML = `<b>Completed autonomously — no downstream review flagged.</b>`;

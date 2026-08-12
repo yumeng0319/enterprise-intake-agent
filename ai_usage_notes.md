@@ -42,6 +42,16 @@ How AI was used throughout this project — for the live Q&A, not for submission
 
 ## Where a tool challenged assumptions in a useful way
 
+- Pushed back three separate times on reintroducing a link between claimed seniority and
+  priority (a floor, then a "C-level minimum," then "there should be *some* relationship")
+  — each time holding the line that priority measures business impact, not organizational
+  power, because it's directly gameable with zero identity verification. The final round
+  actually produced a better design than flatly saying no each time: splitting "does the
+  outcome change" (never) from "does a human look at it faster" (yes, via a new
+  `review_urgency` field) let the real underlying concern -- that who's asking
+  realistically affects response speed in any real org -- get addressed without
+  reopening the vulnerability. Repeated pushback surfaced a genuine gap in the first
+  "no," not just defended it.
 - Pushed back on adding **multimodal (screenshot) input** when it came up as a "nice to
   have" — argued it was unrequested scope expansion that would dilute time better spent
   on the core reasoning chain the case study is actually evaluating. Cut it, documented

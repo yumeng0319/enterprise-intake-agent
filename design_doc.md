@@ -21,6 +21,12 @@ domain is Security, priority is P0, the requester makes an unverified seniority 
 extracted (self-reported, unverified) but never changes the priority number — it only
 ever triggers the downstream-review flag. An identical request gets an identical
 priority whether the requester claims to be a VP or says nothing about who they are.
+Seniority is not indifferent to *everything*, though: it does set `review_urgency` to
+"expedited," which only affects how fast a human looks at the flagged item, never what
+gets resourced or promised before they do. Splitting "does this change the outcome"
+(no) from "does this change how fast a human checks it" (yes) keeps the claim from
+ever being a free fast-pass while still reflecting that who's asking realistically
+affects response speed in any real organization.
 
 **`completeness_score` is cross-checked, not taken on faith.** It gates real behavior
 (whether the agent asks a clarifying question instead of routing), so it gets the same
