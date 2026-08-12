@@ -1,0 +1,402 @@
+[
+  {
+    "id": "sales_system_down",
+    "domain": {
+      "expected": "Sales/GTM",
+      "actual": "Sales/GTM",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Incident/Debug",
+      "actual": "Incident/Debug",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P0-Critical",
+      "actual": "P0-Critical",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": true,
+      "actual": true,
+      "ok": true
+    }
+  },
+  {
+    "id": "vendor_onboarding_manual",
+    "domain": {
+      "expected": "Finance/Procurement",
+      "actual": "Finance/Procurement",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Build/Automate",
+      "actual": "Build/Automate",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P3-Low",
+      "actual": "P3-Low",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "nda_esign_setup",
+    "domain": {
+      "expected": "Legal/Executive/Cross-functional",
+      "actual": "Legal/Executive/Cross-functional",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Access/Support",
+      "actual": "Build/Automate",
+      "ok": true,
+      "lenient": true
+    },
+    "priority": {
+      "expected": "P2-Medium",
+      "actual": "P2-Medium",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "mau_report_request",
+    "domain": {
+      "expected": "Data/Analytics",
+      "actual": "Data/Analytics",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Analytics/Reporting",
+      "actual": "Analytics/Reporting",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P2-Medium",
+      "actual": "P2-Medium",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "vpn_unreliable",
+    "domain": {
+      "expected": "Infra/Platform",
+      "actual": "Infra/Platform",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Incident/Debug",
+      "actual": "Incident/Debug",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P1-High",
+      "actual": "P3-Low",
+      "ok": false
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "new_hire_laptop",
+    "domain": {
+      "expected": "Employee IT/Access",
+      "actual": "Employee IT/Access",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Access/Support",
+      "actual": "Access/Support",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P2-Medium",
+      "actual": "P2-Medium",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "contractor_badge_access",
+    "domain": {
+      "expected": "Security",
+      "actual": "Security",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Access/Support",
+      "actual": "Access/Support",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P3-Low",
+      "actual": "P3-Low",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": true,
+      "actual": true,
+      "ok": true
+    }
+  },
+  {
+    "id": "cross_system_mismatch",
+    "domain": {
+      "expected": "Unclear/Cross-domain",
+      "actual": "Data/Analytics",
+      "ok": true,
+      "lenient": true
+    },
+    "work_type": {
+      "expected": "Incident/Debug",
+      "actual": "Incident/Debug",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P1-High",
+      "actual": "P2-Medium",
+      "ok": false
+    },
+    "needs_human_review": {
+      "expected": true,
+      "actual": true,
+      "ok": true
+    }
+  },
+  {
+    "id": "dashboard_build_request",
+    "domain": {
+      "expected": "Sales/GTM",
+      "actual": "Sales/GTM",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Build/Automate",
+      "actual": "Build/Automate",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P2-Medium",
+      "actual": "P2-Medium",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "expense_system_errors",
+    "domain": {
+      "expected": "Finance/Procurement",
+      "actual": "Finance/Procurement",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Incident/Debug",
+      "actual": "Incident/Debug",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P0-Critical",
+      "actual": "P0-Critical",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": true,
+      "actual": true,
+      "ok": true
+    }
+  },
+  {
+    "id": "sso_integration_setup",
+    "domain": {
+      "expected": "Infra/Platform",
+      "actual": "Infra/Platform",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Integration/Infra",
+      "actual": "Integration/Infra",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P2-Medium",
+      "actual": "P2-Medium",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "laptop_random_restarts",
+    "domain": {
+      "expected": "Employee IT/Access",
+      "actual": "Employee IT/Access",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Incident/Debug",
+      "actual": "Incident/Debug",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P3-Low",
+      "actual": "P3-Low",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": false,
+      "ok": true
+    }
+  },
+  {
+    "id": "metrics_digest_automation",
+    "domain": {
+      "expected": "Data/Analytics",
+      "actual": "Data/Analytics",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Build/Automate",
+      "actual": "Build/Automate",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P3-Low",
+      "actual": "P3-Low",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "dpa_compliance_deadline",
+    "domain": {
+      "expected": "Legal/Executive/Cross-functional",
+      "actual": "Legal/Executive/Cross-functional",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Other/Unclear",
+      "actual": "Other/Unclear",
+      "ok": true,
+      "lenient": true
+    },
+    "priority": {
+      "expected": "P1-High",
+      "actual": "P1-High",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": false,
+      "actual": true,
+      "ok": false
+    }
+  },
+  {
+    "id": "seniority_claim_no_substance",
+    "domain": {
+      "expected": "Finance/Procurement",
+      "actual": "Data/Analytics",
+      "ok": true,
+      "lenient": true
+    },
+    "work_type": {
+      "expected": "Analytics/Reporting",
+      "actual": "Analytics/Reporting",
+      "ok": true,
+      "lenient": true
+    },
+    "priority": {
+      "expected": "P3-Low",
+      "actual": "P3-Low",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": true,
+      "actual": true,
+      "ok": true
+    }
+  },
+  {
+    "id": "status_page_customer_facing",
+    "domain": {
+      "expected": "Infra/Platform",
+      "actual": "Infra/Platform",
+      "ok": true,
+      "lenient": false
+    },
+    "work_type": {
+      "expected": "Incident/Debug",
+      "actual": "Incident/Debug",
+      "ok": true,
+      "lenient": false
+    },
+    "priority": {
+      "expected": "P0-Critical",
+      "actual": "P0-Critical",
+      "ok": true
+    },
+    "needs_human_review": {
+      "expected": true,
+      "actual": true,
+      "ok": true
+    }
+  }
+]
